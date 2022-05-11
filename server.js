@@ -1,17 +1,24 @@
 const express = require('express');
 const request = require('request');
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 app.use(express.json());
 
 app.listen(
-    PORT
+    PORT,() =>{
+        console.log('api listen at ${PORT}');
+    }
 )
 
 let robot_state = {};
 
 // Example: http://localhost:8000/robot_routing?loadId=123&x=50&y=50
+
+app.get("/", (req, res) => {
+    res.send("please try the instruction in readme")
+  });
+
 
 app.get('/robot_routing/',(req,res) => {
 
