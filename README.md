@@ -1,9 +1,10 @@
 # robot_routing_api
 This api is based on node.js and express.js
 
-I depoly the api on heroku so the api can be accessed by:
-https://robot-routing.herokuapp.com/robot_routing?loadId=123&x=50&y=50 (replace the loadId,x and y to see result)
+I depoly the api on heroku for showing the result easily. The api can be accessed by:
 
+https://robot-routing.herokuapp.com/robot_routing?loadId=123&x=50&y=50 (replace the loadId,x and y to see result)
+****
 Local run:
 
 1.git clone the code
